@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --body: #e6f99d; 
+    --element:#7fda89;
+    --section:#259073; 
+    --font: #041122; 
+}
+
+/* global class Start */
+.position--center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.flex--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: var(--font);
+}
+
+.grade--center{
+    width: 98%;
+    height: 90%;
+    background: var(--body);
+    border-radius: 36px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: var(--font);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11);
+    text-align: center;
+}
+
+.shadow{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11);
+}
+/* global class End */
+
+body{
+    background-color: var(--body);
+}
+
+.base--plate{
+    width: 80%;
+    min-height: 95%;
+    background: var(--section);
+    border-radius: 36px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 10% 70%;
+    padding: 15px;
+}
+
+.avg--plate{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+
+.avg--plate > h1, .avg--plate > div > h1{
+    width: 95%;
+    height: 90%;
+    background: var(--body);
+    border-radius: 36px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.avg--plate > div{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr;
+}
+
+.info--plate{
+    width: 95%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 1fr;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.input--value{
+    display: grid;
+}
